@@ -1,5 +1,5 @@
 ---
-title: Program Evaluation (Applied Econometrics) Tools Workshop using STATA and R
+title: Advance Applied Econometrics (Program Evaluation Tools) Workshop using STATA and R
 ---
 
 ::: columns
