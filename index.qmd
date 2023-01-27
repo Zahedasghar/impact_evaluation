@@ -9,12 +9,16 @@ title: Advanced Applied Econometrics (Program Evaluation Tools) Workshop using S
 
 ::: {.column width="70%"}
 ::: nonincremental
-Prof.Dr.Zahid Asghar, School of Economics
+Prof.Dr.Zahid Asghar, School of Economics, QAU
 
-Quaid-i-Azam University, Islamabad
 :::
 :::
 :::
+
+# Venue
+### Department of Economics, University of Sargodha
+### 6-7 February, 2023
+
 
 ## Course Overview
 
@@ -26,7 +30,6 @@ This training workshop is designed [ to focus on research design]{.yellow}, [thi
 
 -   Some of the resources to be used for this course and freely available are listed as follows:
 
--   [Introduction to Econometrics with R](https://scpoecon.github.io/ScPoEconometrics/index.html)
 
 -   [Mastering metrics: Path from cause to effect](https://www.masteringmetrics.com/)
 
