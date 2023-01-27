@@ -1,5 +1,55 @@
 ---
-title: "Course Title"
+title: Program Evaluation (Applied Econometrics) Tools Workshop using STATA and R
 ---
 
-Course info & details here
+::: columns
+::: {.column width="30%"}
+![](zahid.jpeg){width="512"}
+:::
+
+::: {.column width="70%"}
+::: nonincremental
+Prof.Dr.Zahid Asghar, School of Economics
+
+Quaid-i-Azam University, Islamabad
+:::
+:::
+:::
+
+## Course Overview
+
+This training workshop is designed [ to focus on research design]{.yellow}, [thinking clearly with data]{.yellow} with real life data applications through computer-based exercises and learn to reproduce the econometric results of published economic articles like Card (Nobel Laureate) and Krueger (1994). Philosophy of the course will be to enable participants in [doing economics]{.yellow}. [Main software for the course will be R]{.yellow}, and STATA with programs will also be provided for many of the topics. This course will
+
+-   Emphasis on understanding problem solving techniques, rather than mathematical theorems and complex proofs
+
+-   Developing a learning community to improve statistical and econometric skills necessary in the study of economics.
+
+-   Some of the resources to be used for this course and freely available are listed as follows:
+
+-   [Introduction to Econometrics with R](https://scpoecon.github.io/ScPoEconometrics/index.html)
+
+-   [Mastering metrics: Path from cause to effect](https://www.masteringmetrics.com/)
+
+-   [The Effect](theeffectbook.net)
+
+-   [Impact Evaluation in Practice](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice)
+
+## Objectives of the workshop
+
+-   Learning DAGs, IV, DID, RDD and Short Panel data applications
+
+-   Understanding concept of control variables, confounder and colliders
+
+-   Applying all the tools using Health Insurance Subsidy Program data
+
+-   Reproducing results of Card and Krueger work through DID and IV methods
+
+By the end of two-days workshop, participants will be familiar with tools to be applied for program evaluation and better understand research design.
+
+## Main source
+-   [The Effect](theeffectbook.net)
+
+-   [Impact Evaluation in Practice](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice)
+
+
+
