@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Zahid Asghar">
 
-<title>Course Title - Schedule</title>
+<title>Course Title - Program Evaluation (Applied Econometrics) Tools Workshop using STATA and R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Schedule</h1>
+      <h1 class="quarto-secondary-nav-title">Program Evaluation (Applied Econometrics) Tools Workshop using STATA and R</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -100,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">Schedule</a>
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">Schedule</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -118,20 +119,37 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Schedule</h1>
+<h1 class="title d-none d-lg-block">Program Evaluation (Applied Econometrics) Tools Workshop using STATA and R</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zahid Asghar <a href="https://orcid.org/0000-0002-1099-3857" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
     
   
     
@@ -140,63 +158,124 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<table class="table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">6th February</th>
-<th style="text-align: left;"><strong>Title</strong></th>
-<th style="text-align: left;"><strong>Topics covered</strong></th>
-<th style="text-align: left;"><strong>Essential reading</strong></th>
-</tr>
-</thead>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>This training workshop is designed to focus on research design, thinking clearly with data with real life data applications through computer-based exercises and learn to reproduce the econometric results of published economic articles like Card (Nobel Laureate) and Krueger (1994). Philosophy of the course will be to enable participants in doing economics. Main software for the course will be R, and STATA with programs will also be provided for many of the topics. This course will</p>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<ol type="1">
+<li><p>Emphasis on understanding problem solving techniques, rather than mathematical theorems and complex proofs</p></li>
+<li><p>Developing a learning community to improve statistical and econometric skills necessary in the study of economics.</p></li>
+<li><p>Some of the resources to be used for this course and freely available are listed as follows:</p></li>
+</ol>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2023-01poster_files/figure-html/irisfigure-1.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Here is a caption for the figure. This can be added by using the “fig.cap” option in the r code chunk options, see this <a href="https://yihui.name/knitr/options/#plots">link</a> from the legend himself, <a href="https://twitter.com/xieyihui">Yihui Xie</a>.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Maybe you want to show off some of that fancy code you spent so much time on to make that figure, well you can do that too! Just use the <code>echo=TRUE</code> option in the r code chunk options, Figure @ref(fig:myprettycode)!</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="2023-01poster_files/figure-html/myprettycode-1.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Boxplots, so hot right now!</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>How about a neat table of data? See, Table @ref(tab:iristable):</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+
+<table>
+<caption>A table made with the **knitr::kable** function.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:center;"> Sepal <br> Length </th>
+   <th style="text-align:center;"> Sepal <br> Width </th>
+   <th style="text-align:center;"> Petal <br> Length </th>
+   <th style="text-align:center;"> Petal <br> Width </th>
+   <th style="text-align:center;"> Species </th>
+  </tr>
+ </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;">Session-1</td>
-<td style="text-align: left;">Software</td>
-<td style="text-align: left;">Introduction to R, RStudio , STATA, gituhub</td>
-<td style="text-align: left;"><a href="rstudio.cloud">RStudio cloud</a> <a href="github.com">github</a> <a href="quarto.pub">Quarto</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Session-2</td>
-<td style="text-align: left;">Short Panel Data</td>
-<td style="text-align: left;">concepts and applications</td>
-<td style="text-align: left;"><a href="https://zahidasghar.com/econometrics/Panel_reg">Application</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Session-3</td>
-<td style="text-align: left;">Difference in differences approach</td>
-<td style="text-align: left;">Concepts and practice</td>
-<td style="text-align: left;">Lab</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">7th February</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Session-1</td>
-<td style="text-align: left;">Overview and demonstration of day-1 concepts, Instrumental Variable</td>
-<td style="text-align: left;">DnD, IV</td>
-<td style="text-align: left;"><a href="zahidasghar.com/econometrics/Logit-Probit">Application</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Session 2</td>
-<td style="text-align: left;">Instrumental Variable regression</td>
-<td style="text-align: left;">IV 3 assumptions</td>
-<td style="text-align: left;"><a href="https://davidcard.berkeley.edu/papers/njmin-aer.pdf">Card(Nobel Laureate)-Krueger minimum wage paper replication</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Session 3</td>
-<td style="text-align: left;"><p>RDD concepts and Applications</p>
-<p>Lab Session</p></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
+  <tr>
+   <td style="text-align:center;"> 5.1 </td>
+   <td style="text-align:center;"> 3.5 </td>
+   <td style="text-align:center;"> 1.4 </td>
+   <td style="text-align:center;"> 0.2 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 4.9 </td>
+   <td style="text-align:center;"> 3.0 </td>
+   <td style="text-align:center;"> 1.4 </td>
+   <td style="text-align:center;"> 0.2 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 4.7 </td>
+   <td style="text-align:center;"> 3.2 </td>
+   <td style="text-align:center;"> 1.3 </td>
+   <td style="text-align:center;"> 0.2 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 4.6 </td>
+   <td style="text-align:center;"> 3.1 </td>
+   <td style="text-align:center;"> 1.5 </td>
+   <td style="text-align:center;"> 0.2 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 5.0 </td>
+   <td style="text-align:center;"> 3.6 </td>
+   <td style="text-align:center;"> 1.4 </td>
+   <td style="text-align:center;"> 0.2 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 5.4 </td>
+   <td style="text-align:center;"> 3.9 </td>
+   <td style="text-align:center;"> 1.7 </td>
+   <td style="text-align:center;"> 0.4 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 4.6 </td>
+   <td style="text-align:center;"> 3.4 </td>
+   <td style="text-align:center;"> 1.4 </td>
+   <td style="text-align:center;"> 0.3 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> 5.0 </td>
+   <td style="text-align:center;"> 3.4 </td>
+   <td style="text-align:center;"> 1.5 </td>
+   <td style="text-align:center;"> 0.2 </td>
+   <td style="text-align:center;"> setosa </td>
+  </tr>
 </tbody>
 </table>
 
+</div>
+</div>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
