@@ -8,9 +8,5 @@ title: "Course Materials"
 
 [variable_dsc](data/variable_desc.csv)
 
-[Slides](slides/IV.pdf)
-
-[causality](https://tellingstorieswithdata.com/14-causality_from_obs.html)
-
-[Impact Evaluation in Practice with R & STATA files in workshop](https://lfbeisermcgrath.github.io/rimpactevaluation/)
+[Slides](slides/)
 
