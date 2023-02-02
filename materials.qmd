@@ -8,5 +8,10 @@ title: "Course Materials"
 
 [variable_dsc](data/variable_desc.csv)
 
-[Slides](slides/)
+[Pan-reg](slides/panel-reg.pdf)
 
+[DnD](slides/DnD.pdf)
+
+[Instrumental Variable](slides/IV.pdf)
+
+[Regression Discontinuity Design](slides/reg_DD.pdf)
