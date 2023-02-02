@@ -10,3 +10,7 @@ title: "Course Materials"
 
 [Slides](slides/IV.pdf)
 
+[causality](https://tellingstorieswithdata.com/14-causality_from_obs.html)
+
+[Impact Evaluation in Practice with R & STATA files in workshop](https://lfbeisermcgrath.github.io/rimpactevaluation/)
+
