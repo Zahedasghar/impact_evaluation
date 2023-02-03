@@ -8,6 +8,8 @@ title: "Course Materials"
 
 [variable_dsc](data/variable_desc.csv)
 
+[Introduction](https://zahidasghar.com/data_analytics/thinking_with_data)
+
 [Pan-reg](slides/panel-reg.pdf)
 
 [DnD](slides/DnD.pdf)
