@@ -1,4 +1,12 @@
-import excel "D:\RepTemplates\econometrics\telephone.csv.xlsx", sheet("Sheet1") firstrow
+*** Reading data in stata
+*** Working directory
+*** Reporting tables
+*** Comment , comment and comment
+*** Make a do file
+*** Maintain a log file
+**** A Gentle Introduction to STATA 
+
+use "D:\RepTemplates\impact_evaluation\data\cellular_data.dta", clear
 desc
 br
 xtset year state  

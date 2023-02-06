@@ -1,4 +1,4 @@
-***HOPE GEORGIA DATA
+***HOPE DATA
 
 import excel "D:\RepTemplates\Applied_econometrics_2022\HOPE.xlsx", sheet("Sheet1") firstrow
 reg InCollege Georgia After AfterGeorgia
