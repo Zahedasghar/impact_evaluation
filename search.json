@@ -1,36 +1,43 @@
 [
   {
+    "objectID": "icon.html",
+    "href": "icon.html",
+    "title": "Iconify Quarto Extension",
+    "section": "",
+    "text": "Session-1\n\nThinking and Data\nProductivity\nStata Environment\nWhy R/Python\nWorkshop material (github: a cloud based respository)\nRyan Safner, Andrew Heiss, Marginal Revolution University, MIT Micromastrs,\n\nFor example:\n\n\n\n\n\n\n\nShortcode\nIcon\n\n\n\n\n{{< iconify exploding-head >}}\n\n\n\n{{< iconify exploding-head size=2xl >}}\n\n\n\n{{< iconify exploding-head size=5x rotate=180deg >}}\n\n\n\n{{< iconify exploding-head size=Huge >}}\n\n\n\n{{< iconify fluent-emoji-high-contrast 1st-place-medal >}}\n\n\n\n{{< iconify twemoji 1st-place-medal >}}\n\n\n\n{{< iconify line-md loading-alt-loop >}}\n\n\n\n{{< iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical >}}"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Advanced Applied Econometrics (Program Evaluation Tools) Workshop using STATA and R",
+    "title": "Advanced Econometrics (Program Evaluation Tools) Workshop using STATA and R",
     "section": "",
     "text": "Prof.Dr.Zahid Asghar, School of Economics, QAU"
   },
   {
     "objectID": "index.html#organized-by-department-of-economics-university-of-sargodha",
     "href": "index.html#organized-by-department-of-economics-university-of-sargodha",
-    "title": "Advanced Applied Econometrics (Program Evaluation Tools) Workshop using STATA and R",
+    "title": "Advanced Econometrics (Program Evaluation Tools) Workshop using STATA and R",
     "section": "Organized by : Department of Economics, University of Sargodha",
     "text": "Organized by : Department of Economics, University of Sargodha\n\n6-7 February, 2023"
   },
   {
     "objectID": "index.html#course-overview",
     "href": "index.html#course-overview",
-    "title": "Advanced Applied Econometrics (Program Evaluation Tools) Workshop using STATA and R",
+    "title": "Advanced Econometrics (Program Evaluation Tools) Workshop using STATA and R",
     "section": "Course Overview",
     "text": "Course Overview\nThis training workshop is designed to focus on research design, thinking clearly with data with real life data applications through computer-based exercises and learn to reproduce the econometric results of published economic articles like Card (Nobel Laureate) and Krueger (1994). Philosophy of the course will be to enable participants in doing economics. Main software for the course will be R, and STATA with programs will also be provided for many of the topics. This course will\n\nEmphasis on understanding problem solving techniques, rather than mathematical theorems and complex proofs\nDeveloping a learning community to improve statistical and econometric skills necessary in the study of economics.\nSome of the resources to be used for this course and freely available are listed as follows:\nMastering metrics: Path from cause to effect\nThe Effect\nImpact Evaluation in Practice"
   },
   {
     "objectID": "index.html#objectives-of-the-workshop",
     "href": "index.html#objectives-of-the-workshop",
-    "title": "Advanced Applied Econometrics (Program Evaluation Tools) Workshop using STATA and R",
+    "title": "Advanced Econometrics (Program Evaluation Tools) Workshop using STATA and R",
     "section": "Objectives of the workshop",
     "text": "Objectives of the workshop\n\nLearning DAGs, IV, DID, RDD and Short Panel data applications\nUnderstanding concept of control variables, confounder and colliders\nApplying all the tools using Health Insurance Subsidy Program data\nReproducing results of Card and Krueger work through DID and IV methods\n\nBy the end of two-days workshop, participants will be familiar with tools to be applied for program evaluation and better understand research design."
   },
   {
     "objectID": "index.html#main-source",
     "href": "index.html#main-source",
-    "title": "Advanced Applied Econometrics (Program Evaluation Tools) Workshop using STATA and R",
+    "title": "Advanced Econometrics (Program Evaluation Tools) Workshop using STATA and R",
     "section": "Main source",
     "text": "Main source\n\nThe Effect\nImpact Evaluation in Practice"
   },
