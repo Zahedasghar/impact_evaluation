@@ -1,6 +1,6 @@
 ***HOPE DATA
 
-import excel "D:\RepTemplates\Applied_econometrics_2022\HOPE.xlsx", sheet("Sheet1") firstrow
+ import excel "D:\RepTemplates\Applied_econometrics_2022\HOPE.xlsx", sheet("Sheet1") firstrow
 reg InCollege Georgia After AfterGeorgia
 reg InCollege Georgia After AfterGeorgia, r
 display _b[_cons]
