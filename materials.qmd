@@ -1,6 +1,8 @@
 ---
 title: "Course Materials"
 ---
+[Thinking with data](https://zahidasghar.com/data_analytics/thinking_with_data#/ai-ml-random-forests-ann-cnn) 
+
 [Codes](Impact-evaluation.R) 
 
 [Hope](data/HOPE.xlsx)
