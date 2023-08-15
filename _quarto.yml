@@ -6,7 +6,7 @@ website:
   title: "Course Title"
   sidebar:
     background: primary
-    # logo: "images/logo.png"
+    logo: "reskill.png"
     pinned: true
     align: center
     tools:
