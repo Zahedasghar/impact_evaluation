@@ -1,5 +1,5 @@
 ---
-title: Advanced Econometrics (Program Evaluation Tools) Workshop using STATA and R
+title: Appliedd Econometrics with R
 ---
 
 ::: columns
@@ -16,15 +16,15 @@ Prof.Dr.Zahid Asghar, School of Economics, QAU
 :::
 
 
-## Organized by : Department of Economics, University of Sargodha
-#### 6-7 February, 2023
+## Organized by : Pakistan Institute Development of Economics, Islamabad
+#### 17-25 August, 2023
 
 
 ## Course Overview
 
 This training workshop is designed [ to focus on research design]{.yellow}, [thinking clearly with data]{.yellow} with real life data applications through computer-based exercises and learn to reproduce the econometric results of published economic articles like Card (Nobel Laureate) and Krueger (1994). Philosophy of the course will be to enable participants in [doing economics]{.yellow}. [Main software for the course will be R]{.yellow}, and STATA with programs will also be provided for many of the topics. This course will
 
--   Emphasis on understanding problem solving techniques, rather than mathematical theorems and complex proofs
+-   Emphasis on understanding problem solving through real data rather than just simply understanding issues conceptually.
 
 -   Developing a learning community to improve statistical and econometric skills necessary in the study of economics.
 
@@ -39,15 +39,15 @@ This training workshop is designed [ to focus on research design]{.yellow}, [thi
 
 ## Objectives of the workshop
 
--   Learning DAGs, IV, DID, RDD and Short Panel data applications
+-   Learning DAGs, IV, DID, RDD and Propensity Score Matching with data applications
 
--   Understanding concept of control variables, confounder and colliders
+-   Understanding concept of control variables, confounders and colliders
 
 -   Applying all the tools using Health Insurance Subsidy Program data
 
 -   Reproducing results of Card and Krueger work through DID and IV methods
 
-By the end of two-days workshop, participants will be familiar with tools to be applied for program evaluation and better understand research design.
+By the end of this workshop, participants will be familiar with tools to be applied for program evaluation and better understand research design.
 
 ## Main source
 -   [The Effect](theeffectbook.net)
