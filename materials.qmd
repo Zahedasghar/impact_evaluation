@@ -1,7 +1,11 @@
 ---
 title: "Course Materials"
 ---
+[TeachR](https://zahidasghar.com/data_analytics/teachR)
+
 [Thinking with data](https://zahidasghar.com/data_analytics/thinking_with_data#/title-slide) 
+
+[Causal animated plots](https://nickchk.com/causalgraphs.html?fbclid=IwAR1Y_b89yyNq61GIFnhTyKwzxd18CDbK47ckWMJyTIEI9wJm3HuJedL6sRY)
 
 [Impact Evaluation](https://posit.cloud/content/6317407)
 
