@@ -18,8 +18,12 @@ title: "Course Materials"
 
 [Introduction](https://zahidasghar.com/data_analytics/thinking_with_data)
 
+[Card and Kreuger Lab](slides/Card_Kreuger_Lab) 
+
 
 [DnD](slides/DnD.pdf)
+
+[Card-Krueger Lab]()
 
 [Instrumental Variable](slides/IV.pdf)
 
