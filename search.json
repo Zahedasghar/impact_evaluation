@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "TeachR\nThinking with data\nCausal animated plots\nImpact Evaluation\nCodes\nHope Evaluationdata\nvariable_dsc\nIntroduction\nCard and Kreuger Lab\nDnD\nCard-Krueger Lab\nInstrumental Variable\nRegression Discontinuity Design"
+  },
+  {
+    "objectID": "icon.html",
+    "href": "icon.html",
+    "title": "Iconify Quarto Extension",
+    "section": "",
+    "text": "Session-1\n\nThinking and Data\nProductivity\nStata Environment\nWhy R/Python\nWorkshop material (github: a cloud based respository)\nRyan Safner, Andrew Heiss, Marginal Revolution University, MIT Micromastrs,\n\nFor example:\n\n\n\n\n\n\n\nShortcode\nIcon\n\n\n\n\n{{&lt; iconify exploding-head &gt;}}\n\n\n\n{{&lt; iconify exploding-head size=2xl &gt;}}\n\n\n\n{{&lt; iconify exploding-head size=5x rotate=180deg &gt;}}\n\n\n\n{{&lt; iconify exploding-head size=Huge &gt;}}\n\n\n\n{{&lt; iconify fluent-emoji-high-contrast 1st-place-medal &gt;}}\n\n\n\n{{&lt; iconify twemoji 1st-place-medal &gt;}}\n\n\n\n{{&lt; iconify line-md loading-alt-loop &gt;}}\n\n\n\n{{&lt; iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical &gt;}}"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Date\nTitle\nTopics covered\nEssential reading\n\n\n\n\n17th August\nImpact/Program Evaluation in Practice\nImportance of Research Design, Quasi experiments\nRStudio cloud Quarto\n\n\n18th August\nDifference in differences estimators\nConcepts and practice\nCard-Krueger paper replication codes\nInjury data\n\n\n21st August\nInstrumental Variable\nInstrumental Variables and DID,3 assumptions, Endogeneity/Exogeneity, Causal Inference\nSlides from Andrew Heiss\nEducation and Card Krueger data\n\n\n22nd August\nRegression Discontinuity Design Lab Session\n\nSlides and application with Health Insurance Subsidy Program\n\n\n23rd August\nPSM concepts with Applications\n\n\n\n\n25th August\nWorld Bank Data HISP\n\nAll tools application with R codes during workshop and STATA codes will also be provided"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Appliedd Econometrics with R",
@@ -33,26 +54,5 @@
     "title": "Appliedd Econometrics with R",
     "section": "Main source",
     "text": "Main source\n\nThe Effect\nImpact Evaluation in Practice"
-  },
-  {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
-    "section": "",
-    "text": "TeachR\nThinking with data\nCausal animated plots\nImpact Evaluation\nCodes\nHope Evaluationdata\nvariable_dsc\nIntroduction\nCard and Kreuger Lab\nDnD\nCard-Krueger Lab\nInstrumental Variable\nRegression Discontinuity Design"
-  },
-  {
-    "objectID": "icon.html",
-    "href": "icon.html",
-    "title": "Iconify Quarto Extension",
-    "section": "",
-    "text": "Session-1\n\nThinking and Data\nProductivity\nStata Environment\nWhy R/Python\nWorkshop material (github: a cloud based respository)\nRyan Safner, Andrew Heiss, Marginal Revolution University, MIT Micromastrs,\n\nFor example:\n\n\n\n\n\n\n\nShortcode\nIcon\n\n\n\n\n{{&lt; iconify exploding-head &gt;}}\n\n\n\n{{&lt; iconify exploding-head size=2xl &gt;}}\n\n\n\n{{&lt; iconify exploding-head size=5x rotate=180deg &gt;}}\n\n\n\n{{&lt; iconify exploding-head size=Huge &gt;}}\n\n\n\n{{&lt; iconify fluent-emoji-high-contrast 1st-place-medal &gt;}}\n\n\n\n{{&lt; iconify twemoji 1st-place-medal &gt;}}\n\n\n\n{{&lt; iconify line-md loading-alt-loop &gt;}}\n\n\n\n{{&lt; iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical &gt;}}"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Date\nTitle\nTopics covered\nEssential reading\n\n\n\n\n17th August\nImpact/Program Evaluation in Practice\nImportance of Research Design, Quasi experiments\nRStudio cloud Quarto\n\n\n18th August\nDifference in differences estimators\nConcepts and practice\nCard-Krueger paper replication codes\nInjury data\n\n\n21st August\nInstrumental Variable\nInstrumental Variables and DID,3 assumptions, Endogeneity/Exogeneity, Causal Inference\nSlides from Andrew Heiss\nEducation and Card Krueger data\n\n\n22nd August\nRegression Discontinuity Design Lab Session\n\nSlides and application with Health Insurance Subsidy Program\n\n\n23rd August\nPSM concepts with Applications\n\n\n\n\n25th August\nWorld Bank Data HISP\n\nAll tools application with R codes during workshop and STATA codes will also be provided"
   }
 ]
