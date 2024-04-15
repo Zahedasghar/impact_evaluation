@@ -17,24 +17,32 @@ library(gt)
 library(gtsummary)
 library(gtExtras)
 library(glm2)
+
+
 #library(haven)
 
-df <- read_dta("Impact-eval/evaluation.dta")
-vars <- read_csv("Impact-eval/variable_desc.csv")
+df <- read_dta("data/evaluation.dta")
+vars <- read_csv("variable_desc.csv")
 
 theme_set(ggpubr::theme_pubclean())
+
+
+df |> glimpse()
+
+vars
+
 
 # subset data to only "eligible" units
 df_elig <- df %>%
   filter(eligible == 1)
 
-m_ba1 <- lm_robust(health_expenditures ~ round, 
+m_ba1 <- lm_robust(health_expenditures ~ round,
                    clusters = locality_identifier,
                    data = df %>% filter(treatment_locality==1 & enrolled ==1))
 
-m_ba2 <- lm_robust(health_expenditures ~ round + age_hh + age_sp + educ_hh + 
-                     educ_sp + female_hh + indigenous + hhsize + dirtfloor + 
-                     bathroom + land + hospital_distance, 
+m_ba2 <- lm_robust(health_expenditures ~ round + age_hh + age_sp + educ_hh +
+                     educ_sp + female_hh + indigenous + hhsize + dirtfloor +
+                     bathroom + land + hospital_distance,
                    clusters = locality_identifier,
                    data = df %>% filter(treatment_locality==1 & enrolled ==1))
 modelsummary(list("No Controls"=m_ba1, "With Controls"=m_ba2),title="Change in Health Expenditures for Households Enrolled in Program")
@@ -47,13 +55,13 @@ modelsummary(list("No Controls"=m_ba1, "With Controls"=m_ba2),title="Change in H
 #        caption.above = TRUE)
 
 
-m_ene1 <- lm_robust(health_expenditures ~ enrolled, 
+m_ene1 <- lm_robust(health_expenditures ~ enrolled,
                     clusters = locality_identifier,
                     data = df %>% filter(treatment_locality==1 & round ==1))
 
-m_ene2 <- lm_robust(health_expenditures ~ enrolled + age_hh + age_sp + educ_hh + 
-                      educ_sp + female_hh + indigenous + hhsize + dirtfloor + 
-                      bathroom + land + hospital_distance, 
+m_ene2 <- lm_robust(health_expenditures ~ enrolled + age_hh + age_sp + educ_hh +
+                      educ_sp + female_hh + indigenous + hhsize + dirtfloor +
+                      bathroom + land + hospital_distance,
                     clusters = locality_identifier,
                     data = df %>% filter(treatment_locality==1 & round ==1))
 
@@ -61,17 +69,17 @@ modelsummary(list("No Controls"=m_ene1, "With Controls"=m_ene2),
              title="Difference in Health Expenditures Between Households Enrolled and Not Enrolled in Program")
 
 
-## Chapter 3 Randomized Assignment 
+## Chapter 3 Randomized Assignment
 df_elig %>%
   filter(round == 0) %>%
   dplyr::select(treatment_locality, locality_identifier,
-                age_hh, age_sp, educ_hh, educ_sp, female_hh, indigenous, 
+                age_hh, age_sp, educ_hh, educ_sp, female_hh, indigenous,
                 hhsize, dirtfloor, bathroom, land, hospital_distance) %>%
   tidyr::pivot_longer(-c("treatment_locality","locality_identifier")) %>%
   group_by(name) %>%
   do(tidy(lm_robust(value ~ treatment_locality, data = .))) %>%
   filter(term == "treatment_locality") %>%
-  dplyr::select(name, estimate, std.error, p.value) 
+  dplyr::select(name, estimate, std.error, p.value)
 
 out_round0 <- lm_robust(health_expenditures ~ treatment_locality,
                         data = df_elig %>% filter(round == 0),
@@ -88,15 +96,15 @@ out_round1 <- lm_robust(health_expenditures ~ treatment_locality,
 modelsummary(list(out_round0,out_round1), title="Health Expenditure by Treatment Locality")
 
 
-## Re-estimate using a multivariate regression analysis that controls for the other observable 
+## Re-estimate using a multivariate regression analysis that controls for the other observable
 ## characteristics of the sample households. How does your impact estimate change?
 
 out_round1_nocov <- lm_robust(health_expenditures ~ treatment_locality,
                               data = df_elig %>% filter(round == 1),
                               clusters = locality_identifier)
 out_round1_wcov <- lm_robust(health_expenditures ~ treatment_locality +
-                               age_hh + age_sp + educ_hh + educ_sp + 
-                               female_hh + indigenous + hhsize + dirtfloor + 
+                               age_hh + age_sp + educ_hh + educ_sp +
+                               female_hh + indigenous + hhsize + dirtfloor +
                                bathroom + land + hospital_distance,
                              data = df_elig %>% filter(round == 1),
                              clusters = locality_identifier)
@@ -166,13 +174,13 @@ m_cace <- iv_robust(health_expenditures ~ enrolled_rp |
                       promotion_locality,
                     clusters = locality_identifier,
                     data = df %>% filter(round == 1))
-m_cace_wcov <- iv_robust(health_expenditures ~ enrolled_rp + 
-                           age_hh + age_sp + educ_hh + educ_sp + 
-                           female_hh + indigenous + hhsize + dirtfloor + 
-                           bathroom + land + hospital_distance | 
-                           promotion_locality + 
-                           age_hh + age_sp + educ_hh + educ_sp + 
-                           female_hh + indigenous + hhsize + dirtfloor + 
+m_cace_wcov <- iv_robust(health_expenditures ~ enrolled_rp +
+                           age_hh + age_sp + educ_hh + educ_sp +
+                           female_hh + indigenous + hhsize + dirtfloor +
+                           bathroom + land + hospital_distance |
+                           promotion_locality +
+                           age_hh + age_sp + educ_hh + educ_sp +
+                           female_hh + indigenous + hhsize + dirtfloor +
                            bathroom + land + hospital_distance ,
                          clusters = locality_identifier,
                          data = df %>% filter(round == 1))
@@ -198,8 +206,8 @@ ggplot(df_treat, aes(x = poverty_index)) +
   geom_density() +
   labs(x = "Poverty Index")
 
-test_density <- rdplotdensity(rdd = rddensity(df_treat$poverty_index, c = 58), 
-                              X = df_treat$poverty_index, 
+test_density <- rdplotdensity(rdd = rddensity(df_treat$poverty_index, c = 58),
+                              X = df_treat$poverty_index,
                               type = "both")
 ggplot(df_treat, aes(y = enrolled, x = poverty_index)) +
   geom_vline(xintercept = 58) +
@@ -223,9 +231,9 @@ df_treat %>%
 df_treat <- df_treat %>%
   mutate(poverty_index_c0 = poverty_index - 58)
 
-out_rdd <- lm_robust(health_expenditures ~ poverty_index_c0 * enrolled + 
-                       age_hh + age_sp + educ_hh + educ_sp + 
-                       female_hh + indigenous + hhsize + dirtfloor + 
+out_rdd <- lm_robust(health_expenditures ~ poverty_index_c0 * enrolled +
+                       age_hh + age_sp + educ_hh + educ_sp +
+                       female_hh + indigenous + hhsize + dirtfloor +
                        bathroom + land + hospital_distance,
                      data = df_treat %>% filter(round == 1))
 
@@ -237,17 +245,17 @@ out_rdd <- lm_robust(health_expenditures ~ poverty_index_c0 * enrolled +
 modelsummary(out_rdd,title="Evaluating HISP: Regression Discontinuity Design with Regression Analysis")
 
 out_rdd_cubic <- lm_robust(health_expenditures ~ enrolled * poverty_index_c0 +
-                             enrolled * I(poverty_index_c0^2) + 
+                             enrolled * I(poverty_index_c0^2) +
                              enrolled * I(poverty_index_c0^3) +
-                             age_hh + age_sp + educ_hh + educ_sp + 
+                             age_hh + age_sp + educ_hh + educ_sp +
                              female_hh + indigenous + hhsize + dirtfloor +
                              bathroom + land + hospital_distance,
                            data = df_treat %>% filter(round == 1))
 
 
-out_rdd5 <- lm_robust(health_expenditures ~ enrolled * poverty_index_c0 + 
-                        age_hh + age_sp + educ_hh + educ_sp + 
-                        female_hh + indigenous + hhsize + dirtfloor + 
+out_rdd5 <- lm_robust(health_expenditures ~ enrolled * poverty_index_c0 +
+                        age_hh + age_sp + educ_hh + educ_sp +
+                        female_hh + indigenous + hhsize + dirtfloor +
                         bathroom + land + hospital_distance,
                       data = df_treat %>% filter(round == 1 &
                                                    abs(poverty_index_c0) <=5))
@@ -255,7 +263,7 @@ out_rdd5 <- lm_robust(health_expenditures ~ enrolled * poverty_index_c0 +
 modelsummary(list("Linear"=out_rdd,"Cubic"= out_rdd_cubic,"5 Point Window"=out_rdd5), title="Evaluating HISP: Regression Discontinuity Design with Regression Analysis")
 
 
-## htmlreg(list(out_rdd, out_rdd_cubic, out_rdd5), 
+## htmlreg(list(out_rdd, out_rdd_cubic, out_rdd5),
 #doctype = FALSE,
 #custom.model.names = c("Linear", "Cubic", "5 Point Window"),
 #custom.coef.map = list('enrolled' = "Enrollment"),
@@ -263,15 +271,15 @@ modelsummary(list("Linear"=out_rdd,"Cubic"= out_rdd_cubic,"5 Point Window"=out_r
 #caption.above = TRUE)
 
 
-## Ch6 Difference in Differences 
-out_did <- lm_robust(health_expenditures ~ round * enrolled, 
+## Ch6 Difference in Differences
+out_did <- lm_robust(health_expenditures ~ round * enrolled,
                      data = df %>% filter(treatment_locality == 1),
                      clusters = locality_identifier)
 
 out_did_wcov <- lm_robust(health_expenditures ~ round * enrolled +
-                            age_hh + age_sp + educ_hh + educ_sp + 
-                            female_hh + indigenous + hhsize + dirtfloor + 
-                            bathroom + land + hospital_distance, 
+                            age_hh + age_sp + educ_hh + educ_sp +
+                            female_hh + indigenous + hhsize + dirtfloor +
+                            bathroom + land + hospital_distance,
                           data = df %>% filter(treatment_locality == 1),
                           clusters = locality_identifier)
 
@@ -291,7 +299,7 @@ modelsummary(list("No Covariate Adjustment"=out_did,"With Covariance Adjustment"
 df_w <- df %>%
   pivot_wider(names_from = round, # variable that determines new columns
               # variables that should be made "wide"
-              values_from = c(health_expenditures, 
+              values_from = c(health_expenditures,
                               poverty_index, age_hh, age_sp,
                               educ_hh, educ_sp, female_hh,
                               indigenous, hhsize, dirtfloor,
@@ -299,18 +307,18 @@ df_w <- df %>%
                               hospital)) %>%
   # remove the household that has missing values
   # as missing values are not allowed when using matchit
-  filter(!is.na(health_expenditures_0)) 
+  filter(!is.na(health_expenditures_0))
 
 ## Propensity Score Matching
 # We'll conduct propensity score estimation and matching at the same
 # time, as the matchit function does this for us
 psm_r <- matchit(enrolled ~ age_hh_0 + educ_hh_0,
-                 data = df_w %>% dplyr::select(-hospital_0, -hospital_1), 
+                 data = df_w %>% dplyr::select(-hospital_0, -hospital_1),
                  distance = "glm")
 psm_ur <- matchit(enrolled ~ age_hh_0 + educ_hh_0 + age_sp_0 + educ_sp_0 +
                     female_hh_0 + indigenous_0 + hhsize_0 + dirtfloor_0 +
                     bathroom_0 + land_0 + hospital_distance_0,
-                  data = df_w %>% dplyr::select(-hospital_0, -hospital_1), 
+                  data = df_w %>% dplyr::select(-hospital_0, -hospital_1),
                   distance = "glm")
 modelsummary(list("Limited Set"=psm_r,"Full Set"=psm_ur),
              title="Estimating the Propensity Score Based on Baseline Observed Characteristics")
@@ -380,7 +388,7 @@ df_long_match_ur <- df %>%
   left_join(match_df_ur %>% dplyr::select(household_identifier, weights)) %>%
   filter(!is.na(weights))
 
-# Now estimate did 
+# Now estimate did
 did_reg_r <- lm_robust(health_expenditures ~ enrolled * round,
                        data = df_long_match_r, weights = weights,
                        clusters = locality_identifier)
@@ -413,14 +421,14 @@ power_calc_health <- tibble(d_health_expenditures = rep(-1:-3,2),
                            ~ {pwr.t.test(d = .x / sumstats$sd_health,
                                          sig.level = 0.05, power = .y)$n}) %>%
            unlist() %>%
-           ceiling())  
+           ceiling())
 
 power_calc_health %>%
   filter(power == 0.9) %>%
   mutate(mde = gsub("-", "$", d_health_expenditures)) %>%
   select(mde, power, n_required) %>%
-  kable(align = "c", 
-        col.names = c("Minimum Detectable Effect", "Power", 
+  kable(align = "c",
+        col.names = c("Minimum Detectable Effect", "Power",
                       "Sample Required per Group"),
         caption = "Evaluating HISP+: Sample Size Required to Detect Various Minimum Detectable Effects, Power = 0.9") %>%
   kable_styling(full_width = TRUE)
@@ -429,28 +437,28 @@ power_calc_health %>%
   filter(power == 0.8) %>%
   mutate(mde = gsub("-", "$", d_health_expenditures)) %>%
   select(mde, power, n_required) %>%
-  kable(align = "c", 
-        col.names = c("Minimum Detectable Effect", "Power", 
+  kable(align = "c",
+        col.names = c("Minimum Detectable Effect", "Power",
                       "Sample Required per Group"),
         caption = "Evaluating HISP+: Sample Size Required to Detect Various Minimum Detectable Effects, Power = 0.8") %>%
   kable_styling(full_width = TRUE)
 
 
 power_calc_hospital <- tibble(d_hospital = rep(c(-.01,-.02, -.03),2),
-                              power = rep(c(0.8, 0.9), each = 3)) %>% 
+                              power = rep(c(0.8, 0.9), each = 3)) %>%
   mutate(n_required = map2(d_hospital, power,
                            ~ {pwr.t.test(d = .x / sumstats$sd_hospital,
                                          sig.level = 0.05, power = .y)$n}) %>%
            unlist() %>%
-           ceiling ()) 
+           ceiling ())
 
 
 power_calc_hospital %>%
   filter(power == 0.8) %>%
   mutate(mde = gsub("-", "", d_hospital * 100)) %>%
   select(mde, power, n_required) %>%
-  kable(align = "c", 
-        col.names = c("Minimum Detectable Effect (%)", "Power", 
+  kable(align = "c",
+        col.names = c("Minimum Detectable Effect (%)", "Power",
                       "Sample Required per Group"),
         caption = "Evaluating HISP+: Sample Size Required to Detect Various Minimum Desired Effects (Increase in Hospitalization Rate)") %>%
   kable_styling(full_width = TRUE)
@@ -461,8 +469,8 @@ df_elig_t1r1 <- df_elig %>%
   filter(round == 1 & treatment_locality == 1) %>%
   select(health_expenditures, locality_identifier)
 
-icc_est <- clus.rho(df_elig_t1r1$health_expenditures, 
-                    df_elig_t1r1$locality_identifier, 
+icc_est <- clus.rho(df_elig_t1r1$health_expenditures,
+                    df_elig_t1r1$locality_identifier,
                     type = 3)$icc
 icc_est
 
@@ -475,14 +483,14 @@ power_clstr_calc_health <- tibble(d_health_expenditures = -1:-3) %>%
                                           cv = 0, icc = icc_est,
                                           varw = sumstats$sd_health^2)}) %>%
            unlist() %>%
-           ceiling()) 
+           ceiling())
 
 power_clstr_calc_health %>%
   mutate(mde = gsub("-", "$", d_health_expenditures),
          total_clusters = 50 * 2,
          total_sample = total_clusters * n_required) %>%
   select(mde, total_clusters, n_required, total_sample) %>%
-  kable(col.names = c("Minimum Detectable Effect", "Number of Clusters", 
+  kable(col.names = c("Minimum Detectable Effect", "Number of Clusters",
                       "Units per Cluster", "Total Observations"),
         align = "c") %>%
   kable_styling(full_width = TRUE)

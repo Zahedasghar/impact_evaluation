@@ -1,10 +1,10 @@
 ---
-title: Appliedd Econometrics with R
+title: Impact Evaluation Tools in Practice
 ---
 
 ::: columns
 ::: {.column width="30%"}
-![](zahid.jpeg){width="512"}
+![](zahid1.jpeg){width="512"}
 :::
 
 ::: {.column width="70%"}
@@ -17,7 +17,7 @@ Prof.Dr.Zahid Asghar, School of Economics, QAU
 
 
 ## Organized by : Pakistan Institute Development of Economics, Islamabad
-#### 17-25 August, 2023
+#### 18 April- 6 June, 2024 (Every Thursday 9 am to 12 pm)
 
 
 ## Course Overview
@@ -47,7 +47,9 @@ This training workshop is designed [ to focus on research design]{.yellow}, [thi
 
 -   Reproducing results of Card and Krueger work through DID and IV methods
 
-By the end of this workshop, participants will be familiar with tools to be applied for program evaluation and better understand research design.
+By the end of this workshop, participants will be familiar with tools to be applied for program evaluation and better understand research design. 
+
+> **Background in econometrics is desirable but not required as main focus is on research design and thinking clearly with data and working with ideas in practice.**
 
 ## Main source
 -   [The Effect](theeffectbook.net)
