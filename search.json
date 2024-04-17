@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "icon.html",
-    "href": "icon.html",
-    "title": "Iconify Quarto Extension",
-    "section": "",
-    "text": "Session-1\n\nThinking and Data\nProductivity\nStata Environment\nWhy R/Python\nWorkshop material (github: a cloud based respository)\nRyan Safner, Andrew Heiss, Marginal Revolution University, MIT Micromastrs,\n\nFor example:\n\n\n\n\n\n\n\nShortcode\nIcon\n\n\n\n\n{{&lt; iconify exploding-head &gt;}}\n{{&lt; iconify exploding-head &gt;}}\n\n\n{{&lt; iconify exploding-head size=2xl &gt;}}\n{{&lt; iconify exploding-head 2xl &gt;}}\n\n\n{{&lt; iconify exploding-head size=5x rotate=180deg &gt;}}\n{{&lt; iconify exploding-head 5x 180deg &gt;}}\n\n\n{{&lt; iconify exploding-head size=Huge &gt;}}\n{{&lt; iconify exploding-head Huge &gt;}}\n\n\n{{&lt; iconify fluent-emoji-high-contrast 1st-place-medal &gt;}}\n{{&lt; iconify fluent-emoji-high-contrast 1st-place-medal &gt;}}\n\n\n{{&lt; iconify twemoji 1st-place-medal &gt;}}\n{{&lt; iconify twemoji 1st-place-medal &gt;}}\n\n\n{{&lt; iconify line-md loading-alt-loop &gt;}}\n{{&lt; iconify line-md loading-alt-loop &gt;}}\n\n\n{{&lt; iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical &gt;}}\n{{&lt; iconify fa6-brands apple 50px 90deg vertical &gt;}}"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Impact Evaluation Tools in Practice",
@@ -57,16 +50,6 @@
     ]
   },
   {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
-    "section": "",
-    "text": "TeachR\nThinking with data\nCausal animated plots\nImpact Evaluation\nCodes\nHope Evaluationdata\nvariable_dsc\nIntroduction\nCard and Kreuger Lab\nDnD\nCard-Krueger Lab\nInstrumental Variable\nRegression Discontinuity Design",
-    "crumbs": [
-      "Materials"
-    ]
-  },
-  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
@@ -74,6 +57,23 @@
     "text": "Date\nTitle\nTopics covered\nEssential reading\n\n\n\n\n18th April\nOverview of data science\nBasics, data wrangling, data visuals\nRStudio cloud Quarto\n\n\n25th April\ncontinued\ncontinued\ncontinued and some basics of STATA\n\n\n2nd May\nImpact/Program Evaluation in Practice\nImportance of Research Design, Quasi experiments\n\n\n\n9th May\nDifference in differences estimators\nConcepts and practice\nCard-Krueger paper replication codes\nInjury data\n\n\n16th May\nInstrumental Variable\nInstrumental Variables and DID,3 assumptions, Endogeneity/Exogeneity, Causal Inference\nSlides from Andrew Heiss\nEducation and Card Krueger data\n\n\n23rd May\nRegression Discontinuity Design Lab Session\n\nSlides and application with Health Insurance Subsidy Program\n\n\n30th May\nPSM concepts with Applications\n\n\n\n\n6th June\nWorld Bank Data HISP\n\nAll tools application with R codes during workshop and STATA codes will also be provided",
     "crumbs": [
       "Schedule"
+    ]
+  },
+  {
+    "objectID": "icon.html",
+    "href": "icon.html",
+    "title": "Iconify Quarto Extension",
+    "section": "",
+    "text": "Session-1\n\nThinking and Data\nProductivity\nStata Environment\nWhy R/Python\nWorkshop material (github: a cloud based respository)\nRyan Safner, Andrew Heiss, Marginal Revolution University, MIT Micromastrs,\n\nFor example:\n\n\n\n\n\n\n\nShortcode\nIcon\n\n\n\n\n{{&lt; iconify exploding-head &gt;}}\n{{&lt; iconify exploding-head &gt;}}\n\n\n{{&lt; iconify exploding-head size=2xl &gt;}}\n{{&lt; iconify exploding-head 2xl &gt;}}\n\n\n{{&lt; iconify exploding-head size=5x rotate=180deg &gt;}}\n{{&lt; iconify exploding-head 5x 180deg &gt;}}\n\n\n{{&lt; iconify exploding-head size=Huge &gt;}}\n{{&lt; iconify exploding-head Huge &gt;}}\n\n\n{{&lt; iconify fluent-emoji-high-contrast 1st-place-medal &gt;}}\n{{&lt; iconify fluent-emoji-high-contrast 1st-place-medal &gt;}}\n\n\n{{&lt; iconify twemoji 1st-place-medal &gt;}}\n{{&lt; iconify twemoji 1st-place-medal &gt;}}\n\n\n{{&lt; iconify line-md loading-alt-loop &gt;}}\n{{&lt; iconify line-md loading-alt-loop &gt;}}\n\n\n{{&lt; iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical &gt;}}\n{{&lt; iconify fa6-brands apple 50px 90deg vertical &gt;}}"
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "TeachR\nThinking with data\nCausal animated plots\nImpact Evaluation\nCodes\nHope Evaluationdata\nvariable_dsc\nIntroduction\nCard and Kreuger Lab\nDnD\nCard-Krueger Lab\nInstrumental Variable\nRegression Discontinuity Design",
+    "crumbs": [
+      "Materials"
     ]
   }
 ]
